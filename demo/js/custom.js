@@ -12,7 +12,7 @@ $(document).ready(function() {
   };
 
   $('.skin dt').click(function() {
-    $(this).siblings().removeClass('selected').end().prev('dd').andSelf().addClass('selected');
+    $(this).siblings().removeClass('selected').end().prev('dd').addBack().addClass('selected');
   });
 
   $('.arrows .top, .arrows .bottom, .features .self, .skins-info .self, .usage .self').click(function(event) {
